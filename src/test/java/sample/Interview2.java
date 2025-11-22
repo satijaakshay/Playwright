@@ -19,13 +19,12 @@ public class Interview2 {
 	@Test
 	public void first() throws InterruptedException
 	{
-	WebDriverManager.chromedriver().setup();
+	WebDriver driver = new ChromeDriver();
 	ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless=new");
         options.addArguments("--disable-gpu");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.alterainstitute.com");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
