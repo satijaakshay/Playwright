@@ -19,8 +19,7 @@ public class Interview2 {
 	@Test
 	public void first() throws InterruptedException
 	{
-		System.setProperty("webdriver.chrome.driver",
-                "C:\\Users\\satij\\Downloads\\chromedriver-win64\\chromedriver.exe");
+		
 		// 2️⃣ Headless mode for Jenkins
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless=new");
