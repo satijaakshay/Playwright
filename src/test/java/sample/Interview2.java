@@ -44,7 +44,8 @@ public void first() throws InterruptedException
     wait.until(ExpectedConditions.urlToBe("https://alterainstitute.com/pgp"));
     String url = driver.getCurrentUrl();
     Assert.assertEquals(url, "https://alterainstitute.com/pgp");
-
+System.out.println("Browser Started!");
+System.out.println("Title = " + driver.getTitle());
     WebElement app = wait.until(ExpectedConditions.elementToBeClickable(By.id("Apply_Now")));
     app.click();
 
