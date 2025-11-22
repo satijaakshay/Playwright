@@ -19,9 +19,7 @@ public class Interview2 {
 	@Test
 	public void first() throws InterruptedException
 	{
-		
-		// 2️⃣ Headless mode for Jenkins
-        ChromeOptions options = new ChromeOptions();
+	ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless=new");
         options.addArguments("--disable-gpu");
         options.addArguments("--no-sandbox");
