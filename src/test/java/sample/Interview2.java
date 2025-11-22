@@ -22,7 +22,6 @@ public class Interview2 {
 public void first() throws InterruptedException
 {
     ChromeOptions options = new ChromeOptions();
-    options.addArguments("--headless=new");
     options.addArguments("--disable-gpu");
     options.addArguments("--no-sandbox");
     options.addArguments("--disable-dev-shm-usage");
