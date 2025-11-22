@@ -19,6 +19,7 @@ public class Interview2 {
 	@Test
 	public void first() throws InterruptedException
 	{
+	WebDriverManager.chromedriver().setup();
 	ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless=new");
         options.addArguments("--disable-gpu");
