@@ -19,6 +19,12 @@ public class Interview2 {
 	@Test
 	public void first() throws InterruptedException
 	{
+		// 2️⃣ Headless mode for Jenkins
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.alterainstitute.com");
