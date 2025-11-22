@@ -64,4 +64,5 @@ public void first() throws InterruptedException
 
     driver.quit();
 }
+}
 
