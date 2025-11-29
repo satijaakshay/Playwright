@@ -49,7 +49,7 @@ System.out.println("Title = " + driver.getTitle());
     app.click();
 
     WebElement full = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("full_name_field")));
-    full.sendKeys("Akshay");
+    full.sendKeys("Akshay1");
 
     driver.findElement(By.id("email_field")).sendKeys("a@gmail.com");
     driver.findElement(By.id("mobile_number_field")).sendKeys("9999999999");
